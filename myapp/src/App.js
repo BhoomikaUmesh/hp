@@ -1,11 +1,13 @@
 import React from 'react';
 import './App.css';
 
+
 function App() {
   const projects = [
     {id: 1, name: 'Project 1', description: 'This is project 1', image: 'image1.jpg', creator: 'User1'},
     {id: 2, name: 'Project 2', description: 'This is project 2', image: 'image2.jpg', creator: 'User2'},
-    // Add more projects as needed
+    {id: 3, name: 'Project 3', description: 'This is project 3', image: 'image3.jpg', creator: 'User3'},
+    {id: 4, name: 'Project 4', description: 'This is project 4', image: 'image4.jpg', creator: 'User4'},
   ];
 
   return (
