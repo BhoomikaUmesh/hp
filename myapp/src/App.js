@@ -50,7 +50,7 @@ function App() {
           </div>
         </div>
         <div className="p-4 overflow-y-scroll w-full">
-          <h1 className="text-3xl font-semibold text-orange-950">Projects</h1>
+        <h1 className="text-3xl font-semibold text-orange-950 text-center">Projects</h1>
           <div className="grid grid-cols-3 gap-5 mt-4">
             {projects.map((project) => (
               <div key={project.id} className="flex flex-col items-center justify-center p-4 bg-white bg-opacity-70 rounded shadow transform transition duration-500 ease-in-out hover:scale-105 hover:bg-gray-200">
@@ -61,7 +61,8 @@ function App() {
               </div>
             ))}
           </div>
-          <h1 className="text-3xl font-semibold text-orange-950 mt-10">Testimonials</h1>
+          <br></br>
+          <h1 className="text-3xl font-semibold text-orange-950 text-center">Some Amazing words by our client ☺️ !</h1>
           <br></br>
           <Carousel showThumbs={false}>
   {testimonials.map((testimonial) => (
