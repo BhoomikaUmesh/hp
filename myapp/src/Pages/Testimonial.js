@@ -14,23 +14,23 @@ const Testimonial = () => {
 
   return (
     <div>
-        <br></br>
-      <h2 className="text-2xl font-semibold mb-4">Some Valuable Feedback's From Our Clients's ☺️ !</h2>
-      <Carousel showThumbs={false}>
-        {testimonials.map((testimonial) => (
-          <div key={testimonial.id} className="bg-white bg-opacity-70 p-4 rounded shadow transform transition duration-500 ease-in-out hover:bg-opacity-100">
-            <div className="flex items-center">
-              <div className="w-32 h-32 overflow-hidden rounded-full mr-4">
-                <img src={testimonial.image} alt={testimonial.name} className="object-cover w-full h-full" />
-              </div>
-              <div>
-                <h3 className="text-lg font-semibold mb-2">{testimonial.name}</h3>
-                <p className="text-gray-600">{testimonial.text}</p>
-              </div>
-            </div>
-          </div>
-        ))}
-      </Carousel>
+      <br></br>
+      <h2 className="text-2xl font-mono  italic mb-4 mt-10">Some Valuable Feedback's From Our Clients's  !</h2>
+      <Carousel showThumbs={false} autoPlay={true} interval={2000} infiniteLoop={true}>
+  {testimonials.map((testimonial) => (
+    <div key={testimonial.id} className="bg-gradient-to-r from-gray-100 via-gray-500 to-gray-100 hover:shadow-lg transition-transform transform hover:scale-105 rounded shadow duration-100 ease-in-out ease-out-in hover:bg-opacity-100">
+      <div className="flex items-center">
+        <div className="w-50 h-40 overflow-hidden rounded-full mr-4">
+          <img src={testimonial.image} alt={testimonial.name} className="object-cover w-full h-full" />
+        </div>
+        <div>
+          <h3 className="text-lg font-semibold mb-2">{testimonial.name}</h3>
+          <p className="text-gray-900">{testimonial.text}</p>
+        </div>
+      </div>
+    </div>
+  ))}
+</Carousel>
     </div>
   );
 };
